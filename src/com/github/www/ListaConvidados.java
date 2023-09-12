@@ -6,7 +6,7 @@ public class ListaConvidados {
         // Importar a Classe Scanner
         Scanner teclado = new Scanner(System.in);
 
-        // Cria um array para armazenar os nomes dos convidados
+        // Cria a Lista de Convidados
         String[] convidados = new String[7];
 
         // Formatação
@@ -14,8 +14,8 @@ public class ListaConvidados {
         System.out.println("********** LISTA DE CONVIDADOS **********");
         System.out.println();
 
-        // Captura 7 convidados
-        for (int i = 0; i < convidados.length; i++) {
+        // Adiciona na Lista
+        for (int i = 0; i < convidados.length; i++){
             System.out.print("Digite o nome do(a) Convidado(a): ");
             convidados[i] = teclado.next().trim();
         }
@@ -23,12 +23,13 @@ public class ListaConvidados {
         // Fecha o Scanner
         teclado.close();
 
-        // Printa na Tela
+        // Printa o Resultado na Tela
         System.out.println();
-        System.out.println("********** NOMES DOS CONVIDADOS **********");
+        System.out.println("********** NOME DOS CONVIDADOS **********");
         System.out.println();
-        for (String nome : convidados) {
-            System.out.println("O Nome do(a) Convidado(a) é: " + nome);
+
+        for (String nome : convidados){
+            System.out.println("O nome do(a) Convidado(a) é: " + nome);
         }
 
         // Fim
